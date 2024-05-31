@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="formController">
+    <form name="userForm" ng-submit="submitForm()" novalidate>
+        <div>
+            <label>Name:</label>
+            <input type="text" name="name" ng-model="user.name" required />
+            <span ng-show="userForm.name.$error.required">Name is required.</span>
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="email" name="email" ng-model="user.email" required />
+            <span ng-show="userForm.email.$error.required">Email is required.</span>
+        </div>
+        <button type="submit">Submit</button>
+        <div ng-show="successMessage">
+            <p>Form submitted successfully!</p>
+        </div>
+    </form>
+
+    <script>
+        angular.module('myApp', []).controller('formController', function($scope) {
+            $scope.user = {};
+            $scope.successMessage = false;
+
+            $scope.submitForm = function() {
+                if ($scope.userForm.$valid) {
+                    console.log('Form is submitted with:', $scope.user);
+                    $scope.successMessage = true;
+                }
+            };
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Enrollment Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .logo {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+
+        .nav {
+            display: inline-block;
+            float: right;
+            margin-top: 40px;
+        }
+
+        .nav a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .nav a:hover {
+            color: #555;
+        }
+
+        .banner {
+            background-image: url("images/banner.jpg");
+            background-size: cover;
+            height: 500px;
+        }
+
+        .banner h1 {
+            color: white;
+            text-align: center;
+            padding-top: 200px;
+            font-size: 48px;
+        }
+
+        .main {
+            padding: 40px;
+        }
+
+        .main h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .main p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .form {
+            width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .form h3 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form label {
+            display: block;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .form input, .form select {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+        }
+
+        .form button:hover {
+            background-color: #555;
+        }
+
+        .footer {
+            background-color: #333;
+            padding: 20px;
+        }
+
+        .footer p {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <div class="nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="banner">
+            <h1>Welcome to School Enrollment Website</h1>
+        </div>
+        <div class="main">
+            <h2>Why enroll in our school?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis leo quis nisi consequat varius. Morbi quis lacus vitae nisi sollicitudin sagittis. Fusce id augue quis nisl tincidunt aliquet. Phasellus sit amet eros quis lorem ullamcorper fringilla. Quisque vitae nisl quis massa tincidunt aliquam. Cras quis semper leo. Donec quis felis quis leo malesuada lacinia.</p>
+            <p>Nulla facilisi. Curabitur quis velit quis nisi tincidunt ullamcorper. Sed quis nunc quis nisl ullamcorper tincidunt. Sed quis magna quis nunc tincidunt tincidunt. Donec quis felis quis leo malesuada lacinia.</p>
+            <div class="form">
+                <h3>Enroll now</h3>
+                <form action="#" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="grade">Grade</label>
+                    <select id="grade" name="grade" required>
+                        <option value="">Select grade</option>
+                        <option value="1">Grade 1</option>
+                        <option value="2">Grade 2</option>
+                        <option value="3">Grade 3</option>
+                        <option value="4">Grade 4</option>
+                        <option value="5">Grade 5</option>
+                        <option value="6">Grade 6</option>
+                        <option value="7">Grade 7</option>
+                        <option value="8">Grade 8</option>
+                        <option value="9">Grade 9</option>
+                        <option value="10">Grade 10</option>
+                        <option value="11">Grade 11</option>
+                        <option value="12">Grade 12</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© 2024 School Enrollment Website. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

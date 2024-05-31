@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            background-color: red;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-color: blue;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .container {
+            animation: slideIn 1s ease;
+        }
+
+        .container {
+            display: inline-block;
+            padding: 20px;
+            border: 2px solid black;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome To KIT</h1>
+        <p>We learn We Play</p>
+    </div>
+</body>
+</html>

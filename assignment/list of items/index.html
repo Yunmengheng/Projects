@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>AngularJS App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-controller="myController">
+
+    <input type="text" ng-model="searchFilter" placeholder="Filter items...">
+    <select ng-model="sortOrder">
+        <option value="name">Name</option>
+        <option value="category">Category</option>
+    </select>
+
+    <ul>
+        <li ng-repeat="item in items | filter:searchFilter | orderBy:sortOrder">
+            {{ item.name }} - {{ item.category }}
+        </li>
+    </ul>
+
+</body>
+</html>

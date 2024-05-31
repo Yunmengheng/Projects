@@ -1,0 +1,16 @@
+#videoPlayer {
+  max-width: 640px;
+  margin: auto;
+}
+
+#videoControls {
+  background: #333;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+
+#videoControls button,
+#videoControls input {
+  cursor: pointer;
+}

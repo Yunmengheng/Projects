@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Air Flight Reservations</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .header {
+        background-color: #0056b3;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      .search-form {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .flight-item {
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 5px;
+      }
+    </style>
+</head>
+<body ng-app="flightApp" ng-controller="flightController">
+    <div class="header">
+        <h1>Welcome to Air Flight Reservations</h1>
+    </div>
+    <div class="search-form">
+        <input type="text" ng-model="destination" placeholder="Enter Destination...">
+        <button ng-click="searchFlights()">Search Flights</button>
+    </div>
+    <div ng-switch="view">
+        <div ng-switch-when="list">
+            <div ng-repeat="flight in flights" class="flight-item">
+                <h2>{{ flight.name }}</h2>
+                <p>{{ flight.description }}</p>
+                <p>Price: {{ flight.price }}</p>
+                <button ng-if="flight.available">Book Now</button>
+            </div>
+        </div>
+        <div ng-switch-when="none">
+            <p>No flights available.</p>
+        </div>
+    </div>
+    <script>
+      angular.module('flightApp', [])
+.controller('flightController', function($scope) {
+    $scope.flights = [];
+    $scope.view = 'none';
+
+    $scope.searchFlights = function() {
+        $scope.flights = [
+            { name: 'Flight 1', description: 'To Cambodia', price: '200$', available: true },
+            { name: 'Flight 2', description: 'To USA', price: '150$', available: true },
+            { name: 'Flight 3', description: 'To Canada', price: '3550$', available: true },
+            { name: 'Flight 4', description: 'To japan', price: '400$', available: true }
+        ];
+        $scope.view = $scope.flights.length > 0 ? 'list' : 'none';
+    };
+});
+    </script>
+</body>
+</html>

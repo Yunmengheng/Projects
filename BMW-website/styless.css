@@ -1,0 +1,156 @@
+.header {
+  background-color: #000000;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.lg {
+  width: 30px;
+}
+
+.menu {
+  margin-left: auto;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.menu a:hover {
+  color: #ffcc00;
+}
+
+.banner {
+  position: relative;
+  height: 600px;
+}
+
+.banner-image {
+  width: 50%;
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  color: #ffffff;
+}
+
+.banner-text h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.banner-text p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.banner-text a {
+  display: inline-block;
+  background-color: #ffcc00;
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.main {
+  max-width: 1200px;
+  margin-top: 100px;
+  padding: 40px 20px;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+}
+
+.feature-image {
+  width: 50%;
+}
+
+.ft{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.feature-text {
+  width: 50%;
+  padding-left: 20px;
+}
+
+.feature-text h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature-text p {
+  font-size: 16px;
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.footer-menu {
+  display: flex;
+}
+
+.footer-menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.footer-logo {
+  width: 80px;
+}

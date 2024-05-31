@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="searchApp">
+<head>
+    <title>Real-Time Search with AngularJS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+        // AngularJS application and controller setup
+        angular.module('searchApp', []).controller('SearchController', function($scope) {
+            // Sample data - replace with your actual data source
+            $scope.items = ['Apple', 'Banana', 'Orange', 'Mango', 'Grapes', 'Peach'];
+
+            // Search term initialization
+            $scope.searchTerm = '';
+        });
+    </script>
+</head>
+<body ng-controller="SearchController">
+    <div>
+        <input type="text" ng-model="searchTerm" placeholder="Search..."/>
+
+        <ul>
+            <li ng-repeat="item in items | filter:searchTerm">
+                {{ item }}
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body{
+    margin:20px;
+}
+
+.image{
+    width: 150px;
+    border-radius: 10px;
+}
+
+.card{
+    border: 1px dotted blue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(41, 209, 200);
+    border-radius: 10px;
+    border-bottom: 15px solid rgb(125, 211, 133);
+}

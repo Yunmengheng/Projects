@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>AngularJS Custom Slider Directive</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="sliderDirective.js"></script>
+    <style>
+        custom-slider input[type=range] {
+    width: 100%;
+    margin: 10px 0;
+}
+    </style>
+</head>
+<body ng-controller="MainController">
+    <custom-slider min="0" max="100" value="sliderValue"></custom-slider>
+    <p>Selected Value: {{ sliderValue }}</p>
+</body>
+</html>

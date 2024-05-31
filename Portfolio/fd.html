@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Food Delivery</title>
+    <style>
+        body, h1, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #e30e8e;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        ul.food-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.food-list li {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul.food-list li img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        button{
+            padding: 10px;
+            border: none;
+            border-style: solid;
+            border-radius: 30px;
+            background-color: #e30e8e;
+            color: white;
+            width: 150px;
+            height: 50px;
+        }
+
+        button:hover{
+            background-color: rgb(223, 67, 215);
+            transition: 0.15s;
+        }
+        .order{
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Food Delivery App</h1>
+    </header>
+    <div class="container">
+        <h2>Menu</h2>
+        <ul class="food-list">
+            <li>
+                <img src="burger.jpg">
+                <div>
+                    <h3>Burger</h3>
+                    <p>Delicious beef burger with fresh vegetables.</p>
+                    <p>Price: $5.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="pizza.jpg">
+                <div>
+                    <h3>Pizza</h3>
+                    <p>Authentic Italian pizza with various toppings.</p>
+                    <p>Price: $7.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="bread.jpg">
+                <div>
+                    <h3>Bread</h3>
+                    <p>Delicious beef burger with fresh vegetables.</p>
+                    <p>Price: $5.00</p>
+                </div>
+            </li>
+            <li>
+                <img src="noodle.jpg">
+                <div>
+                    <h3>Noodle</h3>
+                    <p>Authentic Italian pizza with various toppings.</p>
+                    <p>Price: $7.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="coca.jpg">
+                <div>
+                    <h3>Cocacola</h3>
+                    <p>Delicious beef burger with fresh vegetables.</p>
+                    <p>Price: $5.99</p>
+                </div>
+            </li>
+            <li>
+                <img src="pepsi.jpg">
+                <div>
+                    <h3>Pepsi</h3>
+                    <p>Authentic Italian pizza with various toppings.</p>
+                    <p>Price: $7.99</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="order">
+        <button>Order Now</button>
+    </div>
+    <footer>
+        &copy; Fast and cheap
+    </footer>
+</body>
+</html>
